@@ -1,0 +1,377 @@
+@charset "UTF-8";
+
+/**
+ * @author Prénom Nom courriel
+ *
+ * TABLE DES MATIÈRES
+ * Normalize
+ * Utilitaires
+ * Charte typographique
+ * Grille
+ * Menu
+ * Règles générales
+ * Mise en page
+ *** Entête du site
+ *** Menu principal
+ *** Accroche
+ *** Entreprise
+ *** Expériences
+ *** Services
+ *** Pied de page
+ */
+
+/* Normalize
+   ========================================================================== */
+@import "_normalize.css";
+
+/* Utilitaires (variables À DÉFINIR)
+   ========================================================================== */
+@import "_utilitaires.css";
+
+/* Charte typographique
+   ========================================================================== */
+@import "_typo.css";
+
+/* Grille
+   ========================================================================== */
+@import "_grille.css";
+
+/* Menu
+   ========================================================================== */
+@import "_menu.css";
+ 
+
+
+/* Règles générales */
+
+* {
+    outline-color: #dba70d;
+}
+
+.sauter {
+    outline: none;
+    background-color: #222222;
+    border-bottom: 3px solid #dba70d;
+    color: #ffffff;
+    display: block;
+    padding: 0.25em 0;
+    text-align: center;
+}
+
+.conteneur {
+    padding: 0 20px;
+}
+
+@media (min-width: 48rem) {
+    .conteneur {
+        padding: 0;
+        max-width: 1200px;
+    }
+}
+
+a {
+    transition: color 0.5s;
+}
+
+.btn {
+    border: 3px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.btn:hover {
+    background-color: #dba70d;
+    border-color: #dba70d;
+    color: #000;
+}
+
+.btn:focus {
+    outline: 0;
+    border-color: #dba70d;
+}
+
+.icone {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.icone--courriel {
+    background: url(../images/courriel.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.icone--telephone {
+    background: url(../images/telephone.svg) center center no-repeat;
+    background-size: contain;
+}
+
+.icone--facebook {
+    background: url(../images/facebook.svg) center center no-repeat;
+    background-size: contain;
+}
+
+figure {
+    margin-top: 40px;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    border-bottom: 5px solid #dba70d;
+    font-size: 1.25rem;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Entête du site */
+
+.entete {
+    background: url(../images/entete-mobile.jpg) center top no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+@media (min-width: 48rem) {
+    .entete {
+        background: url(../images/entete.jpg) center bottom no-repeat;
+        background-size: cover;
+        padding: 20px;
+    }
+
+    .entete div:first-child {
+        min-height: 5rem;
+    }
+}
+
+/* Menu principal */
+.logo {
+    float: left;
+    width: 150px;
+}
+
+@media (min-width: 48rem) {
+    .logo {
+        width: 180px;
+    }
+}
+.nav {
+    text-align: right;
+}
+
+
+
+
+/* Accroche */
+
+.accroche .texte {
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.accroche h1 {
+    line-height: 1.1;
+}
+
+.accroche .btn {
+    margin-top: 20px;
+}
+
+@media (min-width: 48rem) {
+    .accroche {
+        min-height: 80vh;
+        position: relative;
+    }
+
+    .accroche .texte {
+        max-width: 75%;
+        margin: 75px 0;
+        position: absolute;
+        left: 20px;
+        bottom: 0;
+        text-align: left;
+    }
+}
+
+@media (max-height: 31.25rem) {
+    .accroche .texte {
+        position: static;
+    }
+}
+
+/* Entreprise */
+.entreprise.conteneur {
+    padding: 0 20px;
+}
+
+.entreprise h2 {
+    padding-bottom: 0.2em;
+    position: relative;
+}
+
+.entreprise h2:after {
+    background-color: #dba70d;
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+/* Expériences */
+
+.experiences {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.experiences article {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.experiences article img {
+    border-radius: 5px 5px 0 0;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.experiences article .contenu {
+    padding: 10px 20px;
+}
+
+.experiences article h3 {
+    font-size: 2.5rem;
+    line-height: 1.1em;
+    margin-top: 0.5em;
+    padding-bottom: 0.5em;
+    position: relative;
+}
+
+.experiences article h3:after {
+    background-color: #dba70d;
+    content: "";
+    display: inline-block;
+    width: 30%;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Services */
+.services {
+    padding: 20px 20px 60px;
+}
+
+.service {
+    border-top: 5px solid #dba70d;
+}
+
+.service:last-of-type {
+    border-bottom: 5px solid #dba70d;
+}
+
+.service h3 {
+    margin-top: 25px;
+}
+
+.service .image img {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+}
+
+.service .image {
+    padding-bottom: 20px;
+}
+
+@media (min-width: 48rem) {
+    .impair .image {
+        order: 1;
+    }
+}
+
+/* Pied de page */
+
+footer {
+    background-color: #efefef;
+    padding: 1px 0;
+}
+
+footer .conteneur {
+    padding: 0 20px;
+
+    @media (min-width: 40rem) {
+        padding: 0;
+    }
+}
+
+footer h2,
+footer .h2 {
+    font-size: 2rem;
+    margin: 1em auto;
+}
+
+.informations p,
+.informations ul {
+    margin: 0;
+}
+
+.informations ul {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.informations li {
+    margin: 0 auto 1em;
+}
+
+.informations a {
+    border-bottom: 2px solid #dba70d;
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 0.15em;
+    transition: border-color 0.5s;
+}
+
+.informations a:hover {
+    border-color: #000000;
+}
+
+.informations li .icone {
+    display: block;
+    margin-bottom: 0.25em;
+}
+
+@media (min-width: 48rem) {
+    .informations ul {
+        margin: 0 auto;
+    }
+}
+
+.copyright {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 16px 0;
+}

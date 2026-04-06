@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démo de grille 12 colonnes en flexbox</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .col {
+            display: block;
+            /*  pour espacer les blocs à la vertical.
+                Ajuster selon le besoin */
+            margin: 1rem 0 1rem 0;
+            /* pour visualiser les blocs pendant le développement... À mettre en commentaire après */
+            background-color: linen;
+            border: 1px solid black;
+        }
+
+        /* Autre stratégie */
+        .contenu_10_de_12 {
+            margin: 0 8.5% 1%;
+            padding: 0.5rem;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="conteneur entete">
+            Rangée qui n'a pas besoin du système
+        </div>
+    </header>
+
+    <main class="conteneur">
+        <section class="rangee">
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+        </section>
+        <section class="rangee">
+            <div class="col cols_2_de_12">2_de_12</div>
+            <div class="col cols_2_de_12">2_de_12</div>
+            <div class="col cols_2_de_12">2_de_12</div>
+            <div class="col cols_2_de_12">2_de_12</div>
+            <div class="col cols_2_de_12">2_de_12</div>
+            <div class="col cols_2_de_12">2_de_12</div>
+        </section>
+        <section class="rangee">
+            <div class="col cols_3_de_12">3_de_12</div>
+            <div class="col cols_3_de_12">3_de_12</div>
+            <div class="col cols_3_de_12">3_de_12</div>
+            <div class="col cols_3_de_12">3_de_12</div>
+        </section>
+
+        <section class="rangee">
+            <div class="col cols_4_de_12">4_de_12</div>
+            <div class="col cols_4_de_12">4_de_12</div>
+            <div class="col cols_4_de_12">4_de_12</div>
+        </section>
+
+        <section class="rangee">
+            <div class="col cols_6_de_12 parent">6_de_12
+                <section class="rangee">
+                    <div class="col cols_3_de_12">3_de_12</div>
+                    <div class="col cols_3_de_12">3_de_12</div>
+                    <div class="col cols_3_de_12">3_de_12</div>
+                    <div class="col cols_3_de_12">3_de_12</div>
+                </section>
+            </div>
+            <div class="col cols_6_de_12">6_de_12</div>
+        </section>
+
+        <section class="rangee">
+            <div class="col invisible cols_1_de_12">1_de_12</div>
+            <div class="col cols_10_de_12">10_de_12 <br />Avec de chaque côté des div invisible cols_1_de_12 </div>
+            <div class="col invisible cols_1_de_12"></div>
+        </section>
+
+        <section>
+            <p class="col contenu_10_de_12">Solution alternative de la section précédente: une classe contenu_10_de_12
+                définit des marges correspondant à une colonne + une gouttière.</p>
+        </section>
+        <section class="rangee">
+            <div class="invisible col cols_4_de_12">4_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="col cols_1_de_12">1_de_12</div>
+            <div class="invisible col cols_4_de_12"></div>
+        </section>
+    </main> <!-- FIN CONTENEUR PRINCIPAL -->
+    <footer>
+        <div class="conteneur rangee">
+            <div class="col cols_12_de_12">12_de_12 </div>
+        </div>
+    </footer>
+</body>
+
+</html>
