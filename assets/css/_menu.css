@@ -57,11 +57,16 @@ outline: 3px solid #dba70d;
     width: 1em;
     height: 1em;
     /* compléter pour afficher l’icône X */
+    background-image: url(assets/images/ico-fermer.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
 }
 
 .nav--closed .nav__control:before {
     /* compléter pour afficher l’icône Hamburger */
 background-color: (255, 255, 255, 0.25);  
+background-image: url(assets/images/ico-menu.svg);
 }
 
 /* Liste du menu */
