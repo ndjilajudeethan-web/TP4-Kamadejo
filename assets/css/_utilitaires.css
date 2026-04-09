@@ -6,6 +6,12 @@
   --color-text: #fff;
   --color-Y: #dba70d;
   --color-G: rgba(255, 255, 255, 0.25);
+  --color-Z: rgba(145, 0, 145, 0.2);
+  --color-X:rgba(101, 68, 180, 1);
+  --color-Q:#222222;
+  --color-W:#eeeeee;
+  --color-E:#efefef;
+  --color-R:#000000;
   --font-family: Raleway, sans-serif;
   --border: 3px solid #dba70d;
 }

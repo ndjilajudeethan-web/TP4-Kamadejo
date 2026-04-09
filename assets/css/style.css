@@ -45,14 +45,14 @@
 /* Règles générales */
 
 * {
-    outline-color: #dba70d;
+    outline-color: --var(--color-Y);
 }
 
 .sauter {
     outline: none;
-    background-color: #222222;
-    border-bottom: 3px solid #dba70d;
-    color: #ffffff;
+    background-color: var(--color-Q);
+    border-bottom: 3px solid var(--color-Y);
+    color: var(--color-text);
     display: block;
     padding: 0.25em 0;
     text-align: center;
@@ -74,25 +74,25 @@ a {
 }
 
 .btn {
-    border: 3px solid rgba(255, 255, 255, 0.25);
+    border: 3px solid var(--color-Z);
     border-radius: 5px;
     display: inline-block;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--color-text);
     padding: 0.5em 1em;
     text-decoration: none;
     transition: background-color 0.5s;
 }
 
 .btn:hover {
-    background-color: #dba70d;
-    border-color: #dba70d;
+    background-color: var(--color-Y);
+    border-color: var(--color-Y);
     color: #000;
 }
 
 .btn:focus {
     outline: 0;
-    border-color: #dba70d;
+    border-color: var(--color-Y);
 }
 
 .icone {
@@ -128,7 +128,7 @@ figure img {
 }
 
 figcaption {
-    border-bottom: 5px solid #dba70d;
+    border-bottom: 5px solid var(--color-Y);
     font-size: 1.25rem;
     margin-top: 10px;
     padding-bottom: 10px;
@@ -139,7 +139,7 @@ figcaption {
 .entete {
     background: url(../images/entete-mobile.jpg) center top no-repeat;
     background-size: cover;
-    color: #ffffff;
+    color: var(--color-text);
     padding: 10px 0;
     text-align: center;
 }
@@ -222,7 +222,7 @@ figcaption {
 }
 
 .entreprise h2:after {
-    background-color: #dba70d;
+    background-color: var(--color-Y);
     content: "";
     display: inline-block;
     width: 100px;
@@ -235,13 +235,13 @@ figcaption {
 /* Expériences */
 
 .experiences {
-    background-color: #eeeeee;
+    background-color: var(--color-W);
     text-align: center;
     padding: 30px 0;
 }
 
 .experiences article {
-    background-color: #ffffff;
+    background-color: var(--color-text);
     border-radius: 5px;
 }
 
@@ -265,7 +265,7 @@ figcaption {
 }
 
 .experiences article h3:after {
-    background-color: #dba70d;
+    background-color: var(--color-Y);
     content: "";
     display: inline-block;
     width: 30%;
@@ -282,11 +282,11 @@ figcaption {
 }
 
 .service {
-    border-top: 5px solid #dba70d;
+    border-top: 5px solid var(--color-Y);
 }
 
 .service:last-of-type {
-    border-bottom: 5px solid #dba70d;
+    border-bottom: 5px solid var(--color-Y);
 }
 
 .service h3 {
@@ -312,7 +312,7 @@ figcaption {
 /* Pied de page */
 
 footer {
-    background-color: #efefef;
+    background-color: var(--color-E);
     padding: 1px 0;
 }
 
@@ -346,7 +346,7 @@ footer .h2 {
 }
 
 .informations a {
-    border-bottom: 2px solid #dba70d;
+    border-bottom: 2px solid var(--color-Y);
     color: #000000;
     font-weight: bold;
     text-decoration: none;
@@ -355,7 +355,7 @@ footer .h2 {
 }
 
 .informations a:hover {
-    border-color: #000000;
+    border-color: var(--color-R);
 }
 
 .informations li .icone {
@@ -371,7 +371,7 @@ footer .h2 {
 
 .copyright {
     text-align: center;
-    background-color: #ffffff;
+    background-color: var(--color-text);
     margin: 0;
     padding: 16px 0;
 }

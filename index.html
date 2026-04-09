@@ -4,9 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <a href="#contenu" class="sauter screen-reader-only focusable">
-  Allez au contenu
-</a>
     <title>Kampadejo - Expériences de camping</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Photos par Unsplash - https://unsplash.com/collections/315034/camping -->
@@ -15,6 +12,9 @@
 
 <body>
     <!-- Lien Aller au contenu -->
+     <a href="#contenu" class="sauter screen-reader-only focusable">
+  Allez au contenu
+</a>
     <header class="entete" role="banner">
         
         <div class="conteneur">
@@ -57,7 +57,7 @@
                     enim fuga harum itaque officia quae quas qui quibusdam quis, recusandae rerum sed, tempora veniam
                     voluptatibus!</p>
             </div>
-            <aside class="cols_5_de_12">
+            <aside class="cols_5_de_12" role="complementary">
                 <figure>
                     <img src="assets/images/fondateur.jpg" alt="">
                     <figcaption>Pierre-Luc, le fondateur de l'entreprise, accompagné de son chien Brad</figcaption>
@@ -169,22 +169,24 @@
                     <div class="cols_6_de_12">
                         <ul>
                             <li>
+                                <span class="screen-reader-only">Courriel :</span>
                                 <span class="icone--courriel" aria-hidden="true">
-                                    <span class="screen-reader-only">Courriel :</span>
-                                </span>
+                                
                                 <a href="mailto:pleinair@kampadejo.camp">pleinair@kampadejo.camp</a>
+                                </span>
                             </li>
                             <li>
+                                <span class="screen-reader-only">Téléphone :</span>
                                 <span class="icone--telephone" aria-hidden="true">
-                                    <span class="screen-reader-only">Téléphone :</span>
-                                </span>
                                 <a href="tel:+14185555543">(418) 555-5543</a>
+                                </span>
+
                             </li>
                             <li>
+                                <span class="screen-reader-only">Facebook :</span>
                                 <span class="icone--facebook" aria-hidden="true">
-                                    <span class="screen-reader-only">Facebook :</span>
-                                </span>
                                 <a href="http://www.facebook.com" target="_blank">Facebook</a>
+                                </span>
                             </li>
                         </ul>
                     </div>
@@ -196,8 +198,7 @@
     
     <!-- Script pour le menu mobile -->
     
- <script src="js/menu.js"></script>
+ <script src="assets/js/menu.js"></script>
 </body>   
-</body>
 
 </html>

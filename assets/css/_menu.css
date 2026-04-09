@@ -16,7 +16,7 @@
 
 /* Bouton du menu */
 .nav__control {
-    background-color: rgba(145, 0, 145, 0.2);
+    background-color: var(--color-Z);
     border: none;
     padding: 10px;
     min-width: 40px;
@@ -30,8 +30,8 @@
 
 .nav__control:hover,
 .nav__control:active {
-    color: #fff;
-background-color: rgba(255, 255, 255, 0.25);
+    color: var(--color-text);
+background-color: var(--color-G);
 }
 
 .nav__control:focus {
@@ -65,7 +65,7 @@ outline: 3px solid #dba70d;
 
 .nav--closed .nav__control:before {
     /* compléter pour afficher l’icône Hamburger */
-background-color: (255, 255, 255, 0.25);  
+background-color: var(--color-G);  
 background-image: url(assets/images/ico-menu.svg);
 }
 
@@ -85,7 +85,7 @@ background-image: url(assets/images/ico-menu.svg);
 
 /* Liens du menu */
 .nav__link {
-    background-color: rgba(145, 0, 145, 0.2);
+    background-color: var(--color-Z);
     display: block;
     padding: 5px 10px;
     width: 100%;
@@ -98,19 +98,19 @@ background-image: url(assets/images/ico-menu.svg);
 }
 
 .nav__link:hover {
-    color: #dba70d;
+    color: var(--color-text);
     background-color: transparent;
 }
 
 .nav__link:active {
-    color: #fff;
+    color: var(--color-text);
     background-color: magenta;
 }
 
 
 .nav__link:focus {
     outline: none;
-    border-left: 3px solid #dba70d;
+    border-left: 3px solid var(--color-Y);
 }
 
 /** Une classe nav__link--active
@@ -118,13 +118,13 @@ background-image: url(assets/images/ico-menu.svg);
     pour l'item de menu actif
     **/
 .nav__link--active {
-    border-left: 5px solid rgba(101, 68, 180, 1);
+    border-left: 5px solid var(--color-X);
 }
 
 @media (min-width: 40rem) {
     .nav__link--active {
         border-left: none;
-        border-bottom: 5px solid rgba(101, 68, 180, 1);
+        border-bottom: 5px solid var(--color-X);
     }
 }
 
