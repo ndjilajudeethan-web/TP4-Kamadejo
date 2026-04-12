@@ -45,7 +45,7 @@
 /* Règles générales */
 
 * {
-    outline-color: --var(--color-Y);
+    outline-color: var(--color-Y);
 }
 
 .sauter {

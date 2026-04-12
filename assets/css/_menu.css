@@ -47,7 +47,7 @@ background-color: var(--color-G);
      * de modifier l'apparence du outline par défaut des navigateurs.
      */
     outline-offset: -5px;
-outline: 3px solid #dba70d;
+outline: 3px solid var(--border);
 }
 
 
@@ -57,7 +57,7 @@ outline: 3px solid #dba70d;
     width: 1em;
     height: 1em;
     /* compléter pour afficher l’icône X */
-    background-image: url(assets/images/ico-fermer.svg);
+    background-image: url(../images/ico-fermer.svg);
     background-repeat: no-repeat;
     background-size: contain;
     vertical-align: middle;
@@ -66,7 +66,7 @@ outline: 3px solid #dba70d;
 .nav--closed .nav__control:before {
     /* compléter pour afficher l’icône Hamburger */
 background-color: var(--color-G);  
-background-image: url(assets/images/ico-menu.svg);
+background-image: url(../images/ico-menu.svg);
 }
 
 /* Liste du menu */
@@ -98,7 +98,7 @@ background-image: url(assets/images/ico-menu.svg);
 }
 
 .nav__link:hover {
-    color: var(--color-text);
+    color: var(--color-Y);
     background-color: transparent;
 }
 
@@ -150,6 +150,14 @@ background-image: url(assets/images/ico-menu.svg);
 @media (min-width: 40rem) {
     .nav__link:focus {
         border-left: none;
-        border-bottom: 3px solid #dba70d;
+        border-bottom: 3px solid var(--border);
     }
+}
+@media (min-width: 40rem) {
+  .js .nav__list,
+  .js .nav--closed .nav__list {
+    max-height: none;
+    overflow: visible;
+    transition: none;
+  }
 }
