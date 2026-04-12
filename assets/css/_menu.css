@@ -47,7 +47,7 @@ background-color: var(--color-G);
      * de modifier l'apparence du outline par défaut des navigateurs.
      */
     outline-offset: -5px;
-outline: 3px solid var(--border);
+outline: var(--border);
 }
 
 
@@ -150,7 +150,7 @@ background-image: url(../images/ico-menu.svg);
 @media (min-width: 40rem) {
     .nav__link:focus {
         border-left: none;
-        border-bottom: 3px solid var(--border);
+        border-bottom: var(--border);
     }
 }
 @media (min-width: 40rem) {
