@@ -20,6 +20,7 @@
     border: none;
     padding: 10px;
     min-width: 40px;
+    color: var(--color-text);
 }
 
 @media (min-width: 40rem) {
